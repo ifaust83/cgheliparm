@@ -10,7 +10,7 @@ To execute cgHeliParm.py, MDAnalysis python package should be installed.
 
 For a tutorial on how to use cgHeliParm.py, please visit [Martini's group home-page](http://md.chem.rug.nl/cgmartini/index.php/tutorial-martini-dna?a_id=358).
 
-<strong> Please cite the follwoing publications:</strong>
+<strong> Please cite the following publications:</strong>
 Xiang-Jun Lu & Wilma K. Olson (2003)
 [3DNA: a software package for the analysis, rebuilding and visualization of three-dimensional nucleic acid structures.](http://nar.oxfordjournals.org/content/31/17/5108.short)
 _Nucleic Acids Res_. 31(17), 5108-21.
