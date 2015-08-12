@@ -14,10 +14,8 @@ For a tutorial on how to use cgHeliParm.py, please visit [Martini's group home-p
 
 Lu, X.-J. and Olson, W.K. (2003)
 [3DNA: a software package for the analysis, rebuilding and visualization of three-dimensional nucleic acid structures.](http://nar.oxfordjournals.org/content/31/17/5108.short)
-
 _Nucleic Acids Res_. 31(17), 5108-21.
 
 Michaud-Agrawal, N. et al., (2011) 
 [MDAnalysis: a toolkit for the analysis of molecular dynamics simulations.] (http://onlinelibrary.wiley.com/doi/10.1002/jcc.21787/full)
-
 _J Comp Chem_, 32(10), 2319–2327.
