@@ -1,6 +1,6 @@
-cgHeliParm.py for DNA/RNA CG Martini trajectories
+cgHeliParm.py for DNA CG Martini trajectories
 ========
-cgHeliParm.py has been developed for the analysis of the DNA/RNA double stranded structures in molecular dynamics (MD) simulations. Like 3DNA or Curves+, it defines a geometric reference frame for each base/base pair to calculate several structural descriptors of DNA/RNA from the GROMACS CG Martini MD trajectory. As output the helical descriptors are saved in individual files as a function of time.
+cgHeliParm.py has been developed for the analysis of the DNA double stranded structures in molecular dynamics (MD) simulations. Like 3DNA or Curves+, it defines a geometric reference frame for each base/base pair to calculate several structural descriptors of DNA from the GROMACS CG Martini MD trajectory. As output the helical descriptors are saved in individual files as a function of time.
 
 <strong> Note: </strong> since cgHeliParm.py uses MDAnalysis, it can be used with trajectory files from other MD packages such as NAMD or AMBER (only NETDCF files are accepted).  PDB files can also be analyzed.
 
