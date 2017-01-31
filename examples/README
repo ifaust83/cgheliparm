@@ -1,0 +1,19 @@
+
+####### Examples of analysis of Martini dsDNA structures with cgHeliParm #######
+
+1.- Analysis of the coarse-grained structure (pdb code 1bna).
+
+	python ../cgHeliParmPDB.py -i 1bna-cg.pdb -o 1bna
+
+2.- Analysis of a MD trajectory of a coarse-grained double stranded DNA (Dickerson-Drew dodecamer, ddd).
+
+	python ../cgHeliParm.py -f ddd.xtc -s ddd.tpr -o ddd
+
+    Plotting the time evolution of helical parameters (e.g., rise) for a specific base pair step (e.g., the third).
+
+	../Rscripts/helparam_time.R ddd_rise.ser 3
+
+    Plotting the average and associated standard deviations of helical parameters (e.g., slide) along the (Watson) sequence.
+    
+	../Rscripts/helparam_sequence.R ddd_slide.ser CGCGAATTCGCG 
+ 
