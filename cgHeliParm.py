@@ -180,7 +180,7 @@ def stepFrame(o1,R1,o2,R2):
 
 
 # input files
-library_path = "/home/ignacio/scripts/dna.analysis/cgHeliParm/data/"
+library_path = "./data/"
 mol = mdreader.MDreader(description='Calculate helical parameters for dsDNA')
 mol.setargs(o="")
 
