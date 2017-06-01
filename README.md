@@ -2,7 +2,7 @@ cgHeliParm.py for DNA CG Martini trajectories
 ========
 cgHeliParm.py has been developed for the analysis of the DNA double stranded structures in molecular dynamics (MD) simulations. Like 3DNA, it defines a reference frame for each base/base pair to calculate several structural descriptors of DNA from the GROMACS CG Martini MD trajectory. As output, the helical descriptors are saved in individual files as a function of time.
 
-<strong> Note: </strong> cgHeliParm uses MDAnalysis and this must be installed together with the NumPy module with python2.7. Currently MDAnalysis does not support python3, which hinders cgHeliParm supporting python3 for the moment. Once there is a compatible python3, we will have a python3-based version of cgHeliParm. Also PDB files can be analyzed using the script cgHeliParmPDB.py. When running cgHeliParm.py, look for the library_path that links to the 'data' folder in your system and modify it accordingly.
+<strong> Note: </strong> cgHeliParm uses MDAnalysis and this must be installed together with the NumPy module with python2.7. Currently MDAnalysis does not support python3, which hinders cgHeliParm supporting python3 for the moment. Once there is a compatible python3, we will have a python3-based version of cgHeliParm. Also PDB files can be analyzed using the script cgHeliParmPDB.py. When running cgHeliParm.py, look for the library_path that links to the 'data' folder in your system and modify it accordingly. Finally, there is no need to download Gromacs to use cgHeliParm.py (or cgHeliParmPDB.py).
 
 **Last Update: 1 Jun. 2017**
 
