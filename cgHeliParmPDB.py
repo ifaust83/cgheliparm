@@ -18,16 +18,16 @@ args = parser.parse_args()
 def lsfit(residue_name,residue_number):
     base = mol.residues.residues[residue_number]
     if 'A' in residue_name:
-        xprm = base.select_atoms("name SC1 or name SC2 or name SC3 or name SC4")
+        xprm = base.atoms.select_atoms("name SC1 or name SC2 or name SC3 or name SC4")
         stnd = MDAnalysis.Universe(library_path + 'CG_A_std.pdb')
     elif 'C' in residue_name:
-        xprm = base.select_atoms("name SC1 or name SC2 or name SC3")
+        xprm = base.atoms.select_atoms("name SC1 or name SC2 or name SC3")
         stnd = MDAnalysis.Universe(library_path + 'CG_C_std.pdb')
     elif 'G' in residue_name: 
-        xprm = base.select_atoms("name SC1 or name SC2 or name SC3 or name SC4")
+        xprm = base.atoms.select_atoms("name SC1 or name SC2 or name SC3 or name SC4")
         stnd = MDAnalysis.Universe(library_path + 'CG_G_std.pdb')
     elif 'T' in residue_name:    
-        xprm = base.select_atoms("name SC1 or name SC2 or name SC3")
+        xprm = base.atoms.select_atoms("name SC1 or name SC2 or name SC3")
         stnd = MDAnalysis.Universe(library_path + 'CG_T_std.pdb')
     stnd_cog = stnd.atoms.centroid()
     xprm_cog = xprm.atoms.centroid()
@@ -192,8 +192,8 @@ def writeCenterCoords(centers,filename):
     pdbfile.close()
     
         
-def write(data, file):
-    f = open(args.outfile+"_"+file+".txt", "w+b")
+def write2ser(data, file):
+    f = open(args.outfile+"_"+file+".ser", "w+b")
     for line in data:
         f.write('%8.3f%8.3f%8.3f%8.3f%8.3f%8.3f\n' % (line[0],line[1],line[2],line[3], \
         line[4],line[5]))
@@ -243,7 +243,7 @@ for i in range(total_res/2):
     bp_orient[i,:] = na
     
 # writeCenterCoords(bp_ori,"bp")
-write(basepair_parameters,"basepair")
+write2ser(basepair_parameters,"basepair")
 
 #########################
 # Base pair step frame
@@ -264,12 +264,7 @@ for i in range(steps):
     step_parameters[i,:] = sh, sl, ri, ti, ro, tw
 
 # writeCenterCoords(step_ori,"midframe") 
-write(step_parameters,"step")
-write(local_parameters,"local")
+write2ser(step_parameters,"step")
+write2ser(local_parameters,"local")
 
-# for i,param in enumerate(["shear", "stretch", "stagger", "buckle", "propeller", "opening"]):
-#     np.savetxt("dna"+"_"+param+".ser", basepair_parameters[:,i],fmt='%8.3f')
-# for i,param in enumerate(["shift", "slide", "rise", "tilt", "roll", "twist"]):
-#     np.savetxt("dna"+"_"+param+".ser", step_parameters[:,i],fmt='%8.3f')
-    
 print("--- %s seconds ---" % (time.time() - start_time))
