@@ -1,13 +1,14 @@
-
 ####### Examples of analysis of Martini dsDNA structures with cgHeliParm #######
 
 1.- Analysis of the coarse-grained structure (pdb code 1bna).
 
-	python ../cgHeliParmPDB.py -i 1bna-cg.pdb -o 1bna
-
+	python ../cgHeliParmPDB.py -i 1bna-cg.pdb -o 1bna 		(Output in txt format)
+	python ../cgHeliParmPDB_json.py -i 1bna-cg.pdb -o 1bna 		(Output in JSON format)
+	
 2.- Analysis of a MD trajectory of a coarse-grained double stranded DNA (Dickerson-Drew dodecamer, ddd).
 
-	python ../cgHeliParm.py -f ddd.xtc -s ddd.tpr -o ddd
+	python ../cgHeliParm.py -f ddd.xtc -s ddd.tpr -o ddd		(Output in Curves+ format)
+	python ../cgHeliParm_json.py -f ddd.xtc -s ddd.tpr -o ddd 	(Output in JSON format) *
 
     Plotting the time evolution of helical parameters (e.g., rise) for a specific base pair step (e.g., the third).
 
@@ -16,4 +17,9 @@
     Plotting the average and associated standard deviations of helical parameters (e.g., slide) along the (Watson) sequence.
     
 	../Rscripts/helparam_sequence.R ddd_slide.ser CGCGAATTCGCG 
- 
+
+
+ *Three output files are generated in JSON format with the following information (from left to right):
+	** _bp : shear, stretch, stagger, buckle, propeller, opening
+	** _bpstep : shift, slide, rise, tilt, roll, twist
+	** _local : x-displacement, y-displacement, h-rise", inclination, tip, h-twist
