@@ -200,7 +200,7 @@ def write2json(data,file):
     
 # input files
 #ifile = raw_input('PDB file: ')
-library_path = "../data/"
+library_path = "./data/"
 mol = MDAnalysis.Universe(args.pdb)
 total_res = len(mol.residues.resids)
 basepairs = total_res/2
