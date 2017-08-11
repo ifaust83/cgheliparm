@@ -5,6 +5,7 @@
 #######################################################
 
 notes = [
+    ("IF170811","Adapted for MDAnalysis 0.16.2"),
     ("IF170130","Adapted for MDAnalysis 0.15.0"),
     ("IF151105","Added local helical paramateres"),
     ("IF150922","Added snapshot column to .ser output files"),
