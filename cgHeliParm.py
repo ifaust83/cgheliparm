@@ -22,16 +22,16 @@ import mdreader
 def lsfit(residue_name,residue_number):
     base = mol.residues.residues[residue_number]
     if 'A' in residue_name:
-        xprm = base.select_atoms("name SC1 or name SC2 or name SC3 or name SC4")
+        xprm = base.atoms.select_atoms("name SC1 or name SC2 or name SC3 or name SC4")
         stnd = MDAnalysis.Universe(library_path + 'CG_A_std.pdb')
     elif 'C' in residue_name:
-        xprm = base.select_atoms("name SC1 or name SC2 or name SC3")
+        xprm = base.atoms.select_atoms("name SC1 or name SC2 or name SC3")
         stnd = MDAnalysis.Universe(library_path + 'CG_C_std.pdb')
     elif 'G' in residue_name: 
-        xprm = base.select_atoms("name SC1 or name SC2 or name SC3 or name SC4")
+        xprm = base.atoms.select_atoms("name SC1 or name SC2 or name SC3 or name SC4")
         stnd = MDAnalysis.Universe(library_path + 'CG_G_std.pdb')
     elif 'T' in residue_name:    
-        xprm = base.select_atoms("name SC1 or name SC2 or name SC3")
+        xprm = base.atoms.select_atoms("name SC1 or name SC2 or name SC3")
         stnd = MDAnalysis.Universe(library_path + 'CG_T_std.pdb')
     stnd_cog = stnd.atoms.centroid()
     xprm_cog = xprm.atoms.centroid()
