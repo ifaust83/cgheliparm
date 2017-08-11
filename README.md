@@ -4,14 +4,14 @@ cgHeliParm has been developed for the analysis of the DNA double stranded struct
 
 <strong> Note: </strong> cgHeliParm uses MDAnalysis and this must be installed together with the NumPy module with python2.7. Currently MDAnalysis does not support python3, which hinders cgHeliParm supporting python3 for the moment. Once there is a version compatible with python3, we will add it. Also PDB files can be analyzed using the script cgHeliParmPDB.py. When running cgHeliParm.py, look for the library_path that links to the 'data' folder in your system and modify it accordingly. Finally, there is no need to download Gromacs to use cgHeliParm.py (or cgHeliParmPDB.py).
 
-**Last Update: 1 Jun. 2017**
+**Last Update: 11 Ago. 2017**
 
 For a tutorial on how to use cgHeliParm.py, please visit [Martini's group home-page](http://md.chem.rug.nl/cgmartini/index.php/tutorial-martini-dna?a_id=358).
 
 <strong> Please cite the following publications:</strong>
 
 Faustino, I. and Marrink, S.J. (2017)
-[cgHeliParm: analysis of dsDNA helical parameters for coarse-grained MARTINI molecular dynamics simulations.] (https://doi.org/10.1093/bioinformatics/btx444)
+[cgHeliParm: analysis of dsDNA helical parameters for coarse-grained MARTINI molecular dynamics simulations.](https://doi.org/10.1093/bioinformatics/btx444)
 _Bioinformatics_. btx444.
 
 Lu, X.-J. and Olson, W.K. (2003)
