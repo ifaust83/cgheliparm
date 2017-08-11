@@ -11,7 +11,7 @@ For a tutorial on how to use cgHeliParm.py, please visit [Martini's group home-p
 <strong> Please cite the following publications:</strong>
 
 Faustino, I. and Marrink, S.J. (2017)
-(https://doi.org/10.1093/bioinformatics/btx444)
+[cgHeliParm: analysis of dsDNA helical parameters for coarse-grained MARTINI molecular dynamics simulations] (https://doi.org/10.1093/bioinformatics/btx444)
 _Bioinformatics_. btx444.
 
 Lu, X.-J. and Olson, W.K. (2003)
