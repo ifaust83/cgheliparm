@@ -10,6 +10,10 @@ For a tutorial on how to use cgHeliParm.py, please visit [Martini's group home-p
 
 <strong> Please cite the following publications:</strong>
 
+Faustino, I. and Marrink, S.J. (2017)
+(https://doi.org/10.1093/bioinformatics/btx444)
+_Bioinformatics_. btx444.
+
 Lu, X.-J. and Olson, W.K. (2003)
 [3DNA: a software package for the analysis, rebuilding and visualization of three-dimensional nucleic acid structures.](http://nar.oxfordjournals.org/content/31/17/5108.short)
 _Nucleic Acids Res_. 31(17), 5108-21.
