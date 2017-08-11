@@ -19,9 +19,9 @@ Lu, X.-J. and Olson, W.K. (2003)
 _Nucleic Acids Res_. 31(17), 5108-21.
 
 Michaud-Agrawal, N. et al., (2011) 
-[MDAnalysis: a toolkit for the analysis of molecular dynamics simulations.] (http://onlinelibrary.wiley.com/doi/10.1002/jcc.21787/full)
+[MDAnalysis: a toolkit for the analysis of molecular dynamics simulations.](http://onlinelibrary.wiley.com/doi/10.1002/jcc.21787/full)
 _J Comp Chem_, 32(10), 2319–2327.
 
 van der Walt, S. et al. (2011) 
-[The NumPy Array: A Structure for Efficient Numerical Computation.] (http://ieeexplore.ieee.org/document/5725236/)
+[The NumPy Array: A Structure for Efficient Numerical Computation.](http://ieeexplore.ieee.org/document/5725236/)
 _Comput Sci Eng_, 13, 22–30.
