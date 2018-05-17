@@ -6,7 +6,7 @@ cgHeliParm has been developed for the analysis of the DNA double stranded struct
 
 **Last Update: 11 Ago. 2017**
 
-For a tutorial on how to use cgHeliParm.py, please visit [Martini's group home-page](http://md.chem.rug.nl/cgmartini/index.php/tutorial-martini-dna?a_id=358).
+For a tutorial on how to use cgHeliParm.py, please visit [Martini's group home-page](http://cgmartini.nl/index.php/tutorials-general-introduction-gmx5/tutorial-martini-dna-gmx5#parameters).
 
 <strong> Please cite the following publications:</strong>
 
